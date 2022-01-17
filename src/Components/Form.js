@@ -7,7 +7,7 @@ function Form({getFilms}) {
                 <div>FDB</div>
             </Link>
             <form className='form'>
-                <input className='input' type='text' name='film' placeholder='Enter words'/>
+                <input className='input' type='text' name='film' placeholder='Search film'/>
                 <button className='button'>Submit</button>
             </form>
         </div>
