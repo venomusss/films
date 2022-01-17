@@ -8,6 +8,7 @@ function List(props){
                     title={film.original_title}
                     poster={film.poster_path}
                     overview={film.overview}
+                    rate={film.vote_average}
                     id={film.id}
                 />
             ))}
