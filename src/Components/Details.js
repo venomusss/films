@@ -6,7 +6,7 @@ function Details() {
         title: undefined,
         description: undefined,
         poster: undefined,
-        image:undefined,
+        image: undefined,
         genres: undefined,
         runtime: undefined,
         rate: undefined,
@@ -75,7 +75,17 @@ function Details() {
                                      src='https://i.pinimg.com/originals/b5/53/bb/b553bb9f64c3695d2cdadae1830c9be2.jpg'/>
                             )}
                         <p className='genres'><span className='genres-label'>Genres: </span> {info.genres}</p>
-                        <p className='overview'><span className='overview-label'>Overview: </span> <br/>{info.description}</p>
+                        {info.description ? (
+                                <p className='overview'><span className='overview-label'>Overview: </span>
+                                    <br/>{info.description}</p>
+                            ) :
+                            (
+                                <p className='overview'><span className='overview-label'>Overview: </span> No
+                                    description</p>
+                            )}
+                        <p className='backlink'>
+                            <Link to={`/`}><h3 className='goback'><span className='arrow'>←</span>Go back</h3></Link>
+                        </p>
                     </div>
                 </div>
 

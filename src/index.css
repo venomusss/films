@@ -240,8 +240,17 @@ a {
     height: 0;
     width: 0;
 }
-
-
+.goback{
+    font-size: 24px;
+    transition: .2s linear;
+}
+.arrow{
+    font-size: 38px;
+    text-decoration: none;
+}
+.goback:hover{
+    color: #b9b9b9;
+}
 @media (max-width: 1024px) {
     .form {
         width: 60%;
@@ -267,6 +276,9 @@ a {
         height: 80%;
         top: 40%;
         background-color: rgba(0, 0, 0, 0.66);
+    }
+    .Film:hover .item-descr {
+        top: 40%;
     }
 
     .details {
@@ -358,7 +370,9 @@ a {
     .details {
         padding: 20px;
     }
-
+    .Film:hover .item-descr {
+        top: 40%;
+    }
     .det-header {
         flex-direction: column;
         text-align: center;
